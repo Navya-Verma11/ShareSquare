@@ -1,0 +1,37 @@
+/* Opportunities.css */
+
+.opportunities-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0b0808;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    color: #fff; /* Text color */
+}
+
+.form-label {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #fff; /* Text color */
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fff; /* Input background color */
+    color: #000; /* Input text color */
+}
+
+.submit-btn {
+    background-color: #dd1919;
+    color: #080707;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #555;
+}

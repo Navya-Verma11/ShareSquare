@@ -1,0 +1,78 @@
+/* collab.css */
+
+.bodycontainer {
+    font-family: Arial, sans-serif;
+    background-color: rgb(16, 15, 15);
+    margin: 0;
+    padding: 0;
+}
+
+.collaboration-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0b0808;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.collaboration-form h2 {
+    font-size: 35px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.collaboration-form label {
+    display: block;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.collaboration-form input,
+.collaboration-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.collaboration-form button {
+    background-color: #dd1919;
+    color: #080707;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.collaboration-form button:hover {
+    background-color: #555;
+}
+
+.Collaboration-Requests {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0b0808;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.Collaboration-Requests h2 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.request {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.request h3,
+.request p,
+.request button {
+    margin-top: 10px;
+}

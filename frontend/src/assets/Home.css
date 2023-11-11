@@ -1,0 +1,606 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    background-color: #000;
+    padding: 10px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+:root {
+    --navbar-height: 59px;
+}
+
+#logo {
+    margin: 10px 44px;
+}
+
+#logo img {
+    height: 49px;
+    margin: 3px 16px;
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li:last-child {
+    margin-left: 70px;
+    margin-right: 100px;
+}
+
+#navbar ul li:last-child a {
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+#navbar ul li:last-child a:hover {
+    background-color: white;
+    color: black;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+    z-index: 10;
+}
+
+.navbar__brand {
+    width: 100px;
+    height: 100%;
+}
+
+.brand__logo {
+    height: 54;
+    width: 11%;
+    position: absolute;
+    right: 85%;
+}
+
+.navbar__nav__items {
+    display: flex;
+    gap: 10px;
+}
+
+.hero__bg__image__container {
+    width: 100%;
+    height: 80vh;
+}
+
+.hero__bg__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero__bg__overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 80vh;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top,
+        rgba(0, 0, 0, 0.8) 0,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.8) 100%);
+}
+
+.hero__card {
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero__title {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.hero__subtitle,
+.hero__description {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.hero__description {
+    margin: 0 50px;
+}
+
+.email__input,
+.email__input-2 {
+    border: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    padding-left: 7px;
+}
+
+.email__label,
+.email__label-2 {
+    color: black;
+    position: absolute;
+    top: 28%;
+    left: 2%;
+    color: rgb(153, 149, 149);
+    transition: 0.5s;
+}
+
+.email__form__container,
+.email__form__container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0.4% 30% 0.4% 0;
+    width: 115%;
+}
+
+.form__container,
+.form__container-2 {
+    background-color: white;
+    width: 90%;
+    height: 70px;
+    position: relative;
+    padding-left: 6%;
+    left: 15%;
+}
+
+.email__input:focus+.email__label,
+.email__input-2:focus+.email__label-2 {
+    top: 0.2rem;
+    font-size: 10px;
+}
+
+.email__input:not(:placeholder-shown).email__input:not(:focus)+.email__label,
+.email__input-2:not(:placeholder-shown).email__input-2:not(:focus)+.email__label-2 {
+    top: 0.2rem;
+    font-size: 10px;
+}
+
+.email__input:focus-visible,
+.email__input:focus-visible-2 {
+    outline: none;
+}
+
+.primary__button,
+.primary__button-2 {
+    position: absolute;
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    font-weight: 500;
+    font-size: 180%;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.primary__button {
+    left: 70%;
+    padding: 0.4% 9% 0.4% 6%;
+}
+
+.primary__button-2 {
+    right: 15%;
+    height: 42%;
+    width: 23%;
+    padding: 0.4% 9% 0.4% 6%;
+}
+
+.first-arrow,
+.first-arrow-2 {
+    position: absolute;
+    height: 3%;
+}
+
+.get-started,
+.get-started-2 {
+    text-align: center;
+    padding-right: 5%;
+}
+
+.feature {
+    border-top: 8px solid #222;
+    padding: 2rem 1rem;
+}
+
+.feature__details {
+    text-align: center;
+}
+
+.feature__title {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.feature__sub__title {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.feature__image__container {
+    width: 100%;
+    position: relative;
+}
+
+.feature__image {
+    width: 100%;
+}
+
+.feature__backgroud__video__container,
+.feature__3__backgroud__video__container {
+    position: absolute;
+    width: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    z-index: -2;
+}
+
+.feature__backgroud__video,
+.feature__3__backgroud__video {
+    width: 100%;
+}
+
+.feature__2__poster__container {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 16em;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    height: 60px;
+    padding: 0.25rem 0.6rem;
+    gap: 15px;
+}
+
+.poster__container {
+    width: 20%;
+}
+
+.poster {
+    width: 100%;
+    height: 100%;
+}
+
+.poster__details {
+    width: 60%;
+}
+
+.poster__details>h4 {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.poster__details>h6 {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(63, 63, 246);
+}
+
+.download__gif__container {
+    width: 20%;
+}
+
+.gif {
+    width: 100%;
+    height: 100%;
+}
+
+.FAQ__accordian {
+    width: 100%;
+}
+
+.FAQ__title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #303030;
+    border: 1px solid #303030;
+    color: white;
+}
+
+.FAQ__visible {
+    background-color: #303030;
+    border-top: 1px solid black;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.FAQ__visible>p {
+    margin: 1rem;
+}
+
+.FAQ__list__container {
+    border-top: 8px solid #222;
+    padding: 2rem 0;
+}
+
+.FAQ__heading {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 3rem;
+}
+
+.FAQ__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.FAQ__get__started__email {
+    text-align: center;
+}
+
+.FAQ__get__started__email>h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 2rem 0;
+}
+
+.footer__row__1>h4 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer__row__3>.dropdown__container {
+    width: fit-content;
+    border: 1px solid #757575;
+    color: #757575;
+    position: absolute;
+    left: 29%;
+}
+
+.footer__row__3>.dropdown__container>.language__drop__down {
+    color: #757575;
+}
+
+@media (min-width: 768px) {
+    .hero__bg__image__container,
+    .hero__bg__overlay {
+        height: 100vh;
+    }
+
+    .hero__card {
+        top: 40%;
+        left: 30%;
+        transform: translate(-20%, -20%);
+    }
+
+    .hero__title {
+        font-size: 3.7rem;
+    }
+
+    .hero__subtitle,
+    .hero__description {
+        font-size: 1.1rem;
+        padding-bottom: 1%;
+    }
+
+    .hero__subtitle {
+        font-size: 1.5rem;
+    }
+
+    .feature {
+        padding: 4rem;
+    }
+
+    .feature__title {
+        font-size: 35px;
+    }
+
+    .feature__sub__title {
+        font-size: 20px;
+    }
+
+    .feature__image__container {
+        max-width: 500px;
+    }
+
+    .feature:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .FAQ__list {
+        padding: 1rem 5rem;
+    }
+
+    .FAQ__get__started__email {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateX(15%);
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar {
+        padding: 2% 5%;
+    }
+
+    .navbar__brand {
+        width: 150px;
+    }
+
+    .signin__button {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .dropdown__container {
+        padding: 10px 5px;
+    }
+
+    .navbar__nav__items {
+        gap: 30px;
+    }
+
+    .hero__card {
+        top: 56%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .form__container {
+        width: 79%;
+    }
+
+    .email__form__container {
+        flex-direction: row;
+        align-items: center;
+        gap: 1px;
+        position: absolute;
+        top: 100%;
+        right: 5%;
+    }
+
+    .primary__button {
+        height: 70px;
+        width: 260px;
+    }
+
+    .feature__details {
+        text-align: left;
+        padding: 0 6rem;
+    }
+
+    .feature__title {
+        font-size: 50px;
+    }
+
+    .feature__sub__title {
+        font-size: 25px;
+    }
+
+    .feature__2__poster__container {
+        max-width: 26em;
+        height: 85px;
+    }
+
+    .poster__container {
+        width: 15%;
+    }
+
+    .download__gif__container {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .poster__details>h4 {
+        font-size: 18px;
+    }
+
+    .poster__details>h6 {
+        font-size: 14px;
+    }
+
+    .FAQ__title {
+        font-size: 20px;
+    }
+
+    .FAQ__heading {
+        font-size: 38px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    .FAQ__list {
+        padding: 1rem 25rem;
+    }
+
+    .FAQ__get__started__email {
+        transform: translateX(16%);
+    }
+
+    footer {
+        padding: 2rem 4rem;
+    }
+}
+
+@media (min-width: 1254px) {
+    /* Add specific styles for larger screens if needed */
+}
+
