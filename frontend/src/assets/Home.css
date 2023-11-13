@@ -72,8 +72,8 @@ header {
 }
 
 #navbar ul li:last-child {
-    margin-left: 70px;
-    margin-right: 100px;
+    margin-left: 70;
+    margin-right: 100;
 }
 
 #navbar ul li:last-child a {
@@ -116,7 +116,7 @@ footer {
 }
 
 .brand__logo {
-    height: 54;
+    height: 54px;
     width: 11%;
     position: absolute;
     right: 85%;
@@ -145,9 +145,9 @@ footer {
     height: 80vh;
     background: rgba(0, 0, 0, 0.4);
     background-image: linear-gradient(to top,
-        rgba(0, 0, 0, 0.8) 0,
-        rgba(0, 0, 0, 0) 60%,
-        rgba(0, 0, 0, 0.8) 100%);
+            rgba(0, 0, 0, 0.8) 0,
+            rgba(0, 0, 0, 0) 60%,
+            rgba(0, 0, 0, 0.8) 100%);
 }
 
 .hero__card {
@@ -200,7 +200,6 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    padding: 0.4% 30% 0.4% 0;
     width: 115%;
 }
 
@@ -211,7 +210,6 @@ footer {
     height: 70px;
     position: relative;
     padding-left: 6%;
-    left: 15%;
 }
 
 .email__input:focus+.email__label,
@@ -238,9 +236,9 @@ footer {
     border: 1px solid #dc030f;
     color: white;
     font-weight: 500;
-    font-size: 180%;
     border-radius: 2px;
     text-align: center;
+    display: inline-block;
     cursor: pointer;
     display: inline-block;
     transition: 0.5s;
@@ -249,6 +247,7 @@ footer {
 .primary__button {
     left: 70%;
     padding: 0.4% 9% 0.4% 6%;
+    font-size: 180%;
 }
 
 .primary__button-2 {
@@ -256,12 +255,23 @@ footer {
     height: 42%;
     width: 23%;
     padding: 0.4% 9% 0.4% 6%;
+    font-size: 180%;
 }
 
 .first-arrow,
 .first-arrow-2 {
     position: absolute;
     height: 3%;
+}
+
+.first-arrow {
+    top: 30%;
+    right: 10%;
+}
+
+.first-arrow-2 {
+    top: 33%;
+    right: 4.5%;
 }
 
 .get-started,
@@ -356,6 +366,7 @@ footer {
 
 .download__gif__container {
     width: 20%;
+    height: 100%;
 }
 
 .gif {
@@ -420,6 +431,23 @@ footer {
     margin: 2rem 0;
 }
 
+.footer {
+    border-top: 8px solid #333;
+    padding: 5rem 4rem;
+    color: #757575;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__row__2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 4% 15%;
+}
+
 .footer__row__1>h4 {
     font-size: 15px;
     font-weight: 500;
@@ -438,7 +466,10 @@ footer {
 }
 
 @media (min-width: 768px) {
-    .hero__bg__image__container,
+    .hero__bg__image__container {
+        height: 100vh;
+    }
+
     .hero__bg__overlay {
         height: 100vh;
     }
@@ -494,113 +525,5 @@ footer {
         justify-content: center;
         transform: translateX(15%);
     }
-}
-
-@media (min-width: 1024px) {
-    .navbar {
-        padding: 2% 5%;
-    }
-
-    .navbar__brand {
-        width: 150px;
-    }
-
-    .signin__button {
-        padding: 10px 20px;
-        font-size: 18px;
-    }
-
-    .dropdown__container {
-        padding: 10px 5px;
-    }
-
-    .navbar__nav__items {
-        gap: 30px;
-    }
-
-    .hero__card {
-        top: 56%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .form__container {
-        width: 79%;
-    }
-
-    .email__form__container {
-        flex-direction: row;
-        align-items: center;
-        gap: 1px;
-        position: absolute;
-        top: 100%;
-        right: 5%;
-    }
-
-    .primary__button {
-        height: 70px;
-        width: 260px;
-    }
-
-    .feature__details {
-        text-align: left;
-        padding: 0 6rem;
-    }
-
-    .feature__title {
-        font-size: 50px;
-    }
-
-    .feature__sub__title {
-        font-size: 25px;
-    }
-
-    .feature__2__poster__container {
-        max-width: 26em;
-        height: 85px;
-    }
-
-    .poster__container {
-        width: 15%;
-    }
-
-    .download__gif__container {
-        width: 3rem;
-        height: 3rem;
-    }
-
-    .poster__details>h4 {
-        font-size: 18px;
-    }
-
-    .poster__details>h6 {
-        font-size: 14px;
-    }
-
-    .FAQ__title {
-        font-size: 20px;
-    }
-
-    .FAQ__heading {
-        font-size: 38px;
-        font-weight: 500;
-        letter-spacing: 1px;
-    }
-
-    .FAQ__list {
-        padding: 1rem 25rem;
-    }
-
-    .FAQ__get__started__email {
-        transform: translateX(16%);
-    }
-
-    footer {
-        padding: 2rem 4rem;
-    }
-}
-
-@media (min-width: 1254px) {
-    /* Add specific styles for larger screens if needed */
 }
 

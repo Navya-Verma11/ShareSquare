@@ -1,7 +1,7 @@
 // components/MainContent.js
 import React from 'react';
 import backgrnd from '../assets/images/Backgrnd.png'
-
+//import '../assets/home.css';
 function MainContent() {
   return (
     <main>

@@ -1,10 +1,10 @@
 // components/Header.js
 import React from 'react';
-import { useNavigate,useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import logo from '../assets/images/logo.png'
 
-function Header() {
-    const navigate = useNavigate();
+function Header({ isLoggedIn }) {
+  const navigate = useNavigate();
   return (
     <header className="container">
       <nav className="flex space-between">
@@ -20,7 +20,11 @@ function Header() {
               <li className="item"><a href="opportunities">OPPORTUNITIES</a></li>
               <li className="item"><a href="Blogs">BLOGS AND NEWS</a></li>
               <li className="item"><a href="roundtable">ROUNDTABLE</a></li>
-              <li className="item"><a href="login.html">SIGN IN</a></li>
+              {
+                isLoggedIn ? <li className="item"><a href="#">Sign Out</a></li> : <li className="item"><a href="/login">SIGN IN</a></li>
+              }
+
+
             </ul>
           </nav>
         </div>
