@@ -19,7 +19,7 @@ function App() {
           <Route exact path='/' element={<Home isLoggedIn={isLoggedIn} />} />
           <Route exact path='/resources' element={<Resources />} />
           <Route exact path='/collab' element={<Collab />} />
-          <Route exact path='/opportunities' element={<Opportunities />} />
+          <Route exact path='/opportunities' element={<Opportunities isLoggedIn={isLoggedIn} />} />
           <Route exact path='/blogs' element={<Blogs />} />
           <Route exact path='/roundtable' element={<Roundtable />} />
           <Route exact path='/login' element={<Login setIsLoggedIn={setIsLoggedIn} />} />
