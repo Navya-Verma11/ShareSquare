@@ -7,6 +7,9 @@ const cors = require('cors');
 
 const resourceRoute = require("./routes/resource");
 const userRoute = require("./routes/user");
+const collabRoute = require("./routes/collab");
+const blogsRoute = require("./routes/blogs");
+const opportunitiesRoute = require("./routes/opportunities");
 
 const app = express();
 const PORT = 8000;
@@ -23,5 +26,8 @@ app.use(cookieParser());
 
 app.use("/resource", restrictToLoggedinUserOnly, resourceRoute);
 app.use("/user", userRoute);
+app.use("/collab" , restrictToLoggedinUserOnly, collabRoute);
+app.use("/blogs" , restrictToLoggedinUserOnly, blogsRoute);
+app.use("/opportunities" , restrictToLoggedinUserOnly, opportunitiesRoute);
 // app.use("/", checkAuth, staticRoute);
 app.listen(PORT, () => console.log(`Server Started at PORT:${PORT}`));

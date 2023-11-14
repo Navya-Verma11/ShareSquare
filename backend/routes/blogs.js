@@ -1,6 +1,6 @@
 const express = require("express");
-const Blog = require("../models/blog");
-const { handleBlogCreation, handleBlogDeletion, handleBlogUpdation } = require("../controllers/blog");
+const Blog = require("../models/blogs");
+const { handleBlogCreation, handleBlogDeletion, handleBlogUpdation } = require("../controllers/blogs");
 
 const router = express.Router();
 

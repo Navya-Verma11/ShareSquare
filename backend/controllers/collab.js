@@ -4,7 +4,9 @@ const mongoose = require("mongoose");
 
 async function handleCollabCreation(req, res) {
   try {
-    const { description, skills, deadline, contact, comments } = req.body;
+    let { description, skills, deadline, contact, comments } = req.body;
+    deadline = new Date(deadline);
+    contact = parseInt(contact , 10);
 
     const newCollab = await Collab.create({
       description,

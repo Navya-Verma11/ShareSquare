@@ -1,5 +1,5 @@
 const { getUser } = require("../services/auth");
-const Blog = require("../models/blog");
+const Blog = require("../models/blogs");
 const mongoose = require("mongoose");
 
 async function handleBlogCreation(req, res) {

@@ -1,6 +1,6 @@
 const express = require("express");
-const Opportunity = require("../models/opportunity");
-const { handleOpportunityCreation, handleOpportunityDeletion, handleOpportunityUpdation } = require("../controllers/opportunity");
+const Opportunity = require("../models/opportunities");
+const { handleOpportunityCreation, handleOpportunityDeletion, handleOpportunityUpdation } = require("../controllers/opportunities");
 
 const router = express.Router();
 

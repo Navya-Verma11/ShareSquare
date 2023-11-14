@@ -1,5 +1,5 @@
 const { getUser } = require("../services/auth");
-const Opportunity = require("../models/opportunity");
+const Opportunity = require("../models/opportunities");
 const mongoose = require("mongoose");
 
 async function handleOpportunityCreation(req, res) {
