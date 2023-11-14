@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/home';
 import Resources from './components/resources';
-import Collab from './components/Collab';
+import Collab from './components/collab';
 import Opportunities from './components/opportunities';
 import Blogs from './components/blogs';
 import Roundtable from './components/roundtable';
